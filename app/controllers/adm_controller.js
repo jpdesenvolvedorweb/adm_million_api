@@ -1,6 +1,8 @@
+var Adm = require('../models/adm');
+
 const AdmController = {
     index: (req, res, next) =>{
-        res.send([{id: 1, nome: "João Paulo"}]);
+        res.send(Adm.todos());
     }
 }
 
